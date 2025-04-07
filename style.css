@@ -1,0 +1,30 @@
+span{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 10px black;
+    align-content: center;
+    justify-content: center;
+    background-color: lightpink;
+    width: fit-content;
+    height: fit-content;
+}
+
+header{
+    width: 100vw; /*100% de acordo com a tela do dispositivo */
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color:brown;
+}
+
+h1{
+    background-color:lightcoral;
+    color: black;
+}
+
+.header__title--blue{
+    background-color:blue;
+    color:white
+}
