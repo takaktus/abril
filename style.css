@@ -6,7 +6,7 @@ span{
     border: solid 10px black;
     align-content: center;
     justify-content: center;
-    background-color: lightpink;
+    background-color: yellow;
     width: fit-content;
     height: fit-content;
 }
@@ -35,3 +35,38 @@ header{
     font-family: "inter", sans-serif;
 }
 
+img{
+    max-width: 100vw;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 200px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer__social-text--middle{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer__social-icons--middle{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  
+    
+}
+
+.footer__adress--left{
+
+}
