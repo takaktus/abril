@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="samples.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Abril</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
-    <!--block__element--modifier-->
-<header class="header">
-    <span><h1 class="header__title--blue">Pizzaria</h1><h1 class="header__title--red">Pizza</h1></span>
-</header>
+     <!--block__element--modifier-->
+     <header class="header">
+<div class="title"><h1 class="header__title--blue">Pizzaria</h1><h1 class="header__title--red">Pizza</h1></div>
+    </header>
     <main>
-    <img src="pizza.jpeg">
+
+        <form class="form" action="">
+
+            <span>Login</span>
+            <input class="form__control" type="text" name="" id="login" placeholder="User">
+            <input class="form__control" type="password" name="" id="senha" placeholder="Senha">
+            <div class="form__btn-area">
+                <input class="form__btn" type="button" value="Register">
+                <input class="form__btn--green" type="submit" value="Login">
+            </div>
+        </form>
+        
+
+    
     </main>
 
 <footer class="footer">
@@ -32,11 +46,11 @@
 <a href=""><i class="fa-brands fa-tiktok"></i></a>
 <a href=""><i class="fa-brands fa-whatsapp"></i></a>
 </section>
+</section>
 <div class="footer__form--right">
 <a href="form.html">Entre em contato conosco</a>
 
 </div>
-</section>
 
 </footer>
 </body>

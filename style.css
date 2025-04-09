@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-span{
+.title{
     display: flex;
     flex-wrap: wrap;
-    border: solid 10px black;
+    border: solid 20px black;
+    border-radius: 20px;
     align-content: center;
     justify-content: center;
     background-color: yellow;
     width: fit-content;
     height: fit-content;
+    width: 140px;
+    height: 50px;
 }
 
 header{
-    width: 100vw; /*100% de acordo com a tela do dispositivo */
-    height: 300px;
+    height: 20vh; /*100% de acordo com a tela do dispositivo */
+    border: solid 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    background-color:brown;
+    background-color:lightgoldenrodyellow;
 }
 
 .header__title--red{
@@ -26,6 +29,7 @@ header{
     color: black;
     border: solid 2px black;
     font-family: "inter", sans-serif;
+    font-size: larger;
 }
 
 .header__title--blue{
@@ -33,40 +37,108 @@ header{
     color:white;
     border: solid 2px black;
     font-family: "inter", sans-serif;
+    font-size: larger;
 }
 
-img{
-    max-width: 100vw;
+main{
+    background-color: blanchedalmond;
+    height: 60vh;
+    background-image: url(pizza.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+ border-left: solid 7vw black;
+ border-right: solid 7vw black;
+}
+
+.form{
+    position: relative;
+    left: 56vw;
+    top: 19vh;
+    background-color: lightgoldenrodyellow;
+    width: 400px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+span{
+    font-weight: bolder;
+    font-size: larger;
+    background-color: rgb(233, 119, 119);
+    border: black;
+    border-radius: 5px;
+    font-family: "inter", sans-serif;
+}
+
+.form__control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 320px;
+} 
+
+.form__btn-area{
+display: flex;
+gap:15px;
+}
+  
+.form__btn{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 10px 18px;
+    box-shadow: 0px 4px 4px 0px
+}
+
+.form__btn--green{
+    background-color: lightgreen;
+    border-radius: 10px;
+    width: 60px;
 }
 
 
 .footer{
-    width: 100vw;
-    height: 200px;
     background-color: lightgoldenrodyellow;
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 180px;
+    height: 20vh;
 }
 
 .footer__social-text--middle{
+    font-family: "inter", sans-serif;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .footer__social-icons--middle{
-    display:flex;
+    display:inline-flex;
     flex-direction: row;
-    align-content: center;
     justify-content: center;
-  
+    gap: 20px;
+
     
 }
 
 .footer__adress--left{
+font-family: "inter", sans-serif;
+}
 
+.footer__form--right{
+    font-family: "inter", sans-serif;
 }
