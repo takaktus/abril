@@ -1,49 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.title{
-    display: flex;
-    flex-wrap: wrap;
-    border: solid 20px black;
-    border-radius: 20px;
-    align-content: center;
-    justify-content: center;
-    background-color: yellow;
-    width: fit-content;
-    height: fit-content;
-    width: 140px;
-    height: 50px;
+:root{
+--cor-primaria: lightgoldenrodyellow;
+--cor-secundaria: rgb(255, 145, 0);
+--cor-terciaria: black;
+--cor-quaternaria: yellow;
 }
 
 header{
     height: 20vh; /*100% de acordo com a tela do dispositivo */
     border: solid 30px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    background-color:lightgoldenrodyellow;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--cor-primaria);
+}
+
+.header__title{
+    display: flex;
+    flex-wrap: column wrap;
+    border: solid 2px black;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    font-family: "inter" serif;
+    font-size: 90px;
+    font-weight: 549;
+    background-color: var(--cor-secundaria);  
 }
 
 .header__title--red{
-    background-color:red;
-    color: black;
-    border: solid 2px black;
-    font-family: "inter", sans-serif;
-    font-size: larger;
+  font-style: italic;
 }
 
 .header__title--blue{
-    background-color:blue;
-    color:white;
-    border: solid 2px black;
-    font-family: "inter", sans-serif;
-    font-size: larger;
+   
+  
+}
+
+.header__logo{
+    
+    max-width: 100px;
+    max-height: 100px;
 }
 
 main{
-    background-color: blanchedalmond;
+    background-color: var(--cor-secundaria);
     height: 60vh;
     background-image: url(pizza.jpeg);
+    
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 0;
@@ -55,7 +61,7 @@ main{
     position: relative;
     left: 56vw;
     top: 19vh;
-    background-color: lightgoldenrodyellow;
+    background-color: var(--cor-primaria);
     width: 400px;
     height: 200px;
     border: solid 1px black;
@@ -70,7 +76,6 @@ main{
 span{
     font-weight: bolder;
     font-size: larger;
-    background-color: rgb(233, 119, 119);
     border: black;
     border-radius: 5px;
     font-family: "inter", sans-serif;
@@ -108,7 +113,7 @@ gap:15px;
 
 
 .footer{
-    background-color: lightgoldenrodyellow;
+    background-color: var(--cor-primaria);
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
